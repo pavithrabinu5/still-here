@@ -189,7 +189,7 @@ PASS  mobile-reduced: chapter 3 shown
 PASS  mobile-reduced: 2.5 s → 374,741 km — 374,741
 PASS  mobile-reduced: 2.6 s → 389,730 km
 PASS  mobile-reduced: stopwatch ends at 2.500 s
-PASS  mobile-reduced: reduced motion skips animation — 0.07 s
+PASS  mobile-reduced: reduced motion skips animation — 0.06 s
 PASS  mobile-reduced: no horizontal overflow at path — excess 0px
 PASS  mobile-reduced: chapter 4 shown
 PASS  mobile-reduced: arrow key moves tab

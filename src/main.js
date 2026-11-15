@@ -1,6 +1,6 @@
 // Still Here — story interactions. SI disclosure: written with SI assistance (Claude, Anthropic); reviewed and tested by Team PARALLAX.
 import { C_KM_PER_S, oneWayDistanceKm, formatKm, cornerPath, flatPath, returnErrorDeg } from './physics.js';
-import { sprite } from './sprites.js';
+import { sprite, parallaxEmblem } from './sprites.js';
 import { runIntro, addWalkways, initStars, discover, resetStars } from './intro.js';
 
 document.documentElement.classList.add('js');
@@ -34,6 +34,16 @@ for (const [i, line] of Object.entries(guideLines)) {
 }
 addWalkways();
 initStars();
+// Team PARALLAX branding: desktop background emblem (wide screens), taskbar name, end credit.
+const bgLogo = document.createElement('div');
+bgLogo.className = 'bg-logo';
+bgLogo.setAttribute('aria-hidden', 'true');
+bgLogo.innerHTML = `${parallaxEmblem({ size: 150 })}<span class="bg-logo-name">TEAM<br>PARALLAX</span>`;
+document.body.appendChild(bgLogo);
+const brand = document.querySelector('.brand');
+if (brand) brand.insertAdjacentHTML('beforeend', '<span class="brand-team"> · Team PARALLAX</span>');
+const fine = document.querySelector('[data-chapter="6"] .fineprint');
+if (fine) fine.insertAdjacentHTML('beforebegin', `<div class="team-credit">${parallaxEmblem({ size: 64, label: 'Team PARALLAX logo' })}<p><b>Made by Team PARALLAX</b><span>NASA Space Apps Challenge 2026</span></p></div>`);
 // Visible watermark required by the 2026 Space Apps rules for SI-generated images:
 // shown in each window's character strip, beside the illustrations.
 document.querySelectorAll('.walkway').forEach((w) => {

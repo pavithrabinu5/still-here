@@ -1,7 +1,7 @@
 // Title screen, walking characters and discovery stars for the pixel theme.
 // SI disclosure: written with SI assistance (Claude, Anthropic); reviewed and tested by Team PARALLAX.
 // The boot log reports REAL loading steps (font, photo, sprites); it never shows invented progress numbers.
-import { sprite } from './sprites.js';
+import { sprite, parallaxEmblem } from './sprites.js';
 
 const reduce = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const wait = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -23,7 +23,7 @@ export function runIntro() {
       <div class="intro-moon">${sprite('moon', { px: 7 })}</div>
     </div>
     <div class="intro-copy">
-      <p class="intro-kicker">Team PARALLAX presents</p>
+      <div class="intro-team">${parallaxEmblem({ size: 92, label: 'Team PARALLAX logo' })}<p class="intro-kicker">Team PARALLAX presents</p></div>
       <h1 id="intro-title" class="intro-logo" data-text="STILL HERE">STILL HERE</h1>
       <p class="intro-sub">A science story about a mirror left on the Moon in 1969</p>
       <div class="intro-bar" role="progressbar" aria-label="Loading" aria-valuemin="0" aria-valuemax="3" aria-valuenow="0"><span></span></div>

@@ -343,6 +343,25 @@ body::before {
 }
 @media (prefers-reduced-motion: reduce) { .file, .folder-front { transition: none; } }
 
+/* ================= Team PARALLAX branding ================= */
+.emblem { display: block; image-rendering: pixelated; }
+.bg-logo {
+  position: fixed; left: 18px; bottom: 18px; z-index: -1; pointer-events: none; opacity: .55;
+  display: none; flex-direction: column; align-items: center; gap: 6px; width: 150px;
+}
+.bg-logo-name { font: 700 1.05rem/1.05 var(--pixel); color: #e1e4ff; letter-spacing: .14em; text-align: center; text-shadow: 3px 3px 0 #1f7a4c; }
+/* only where the starfield margin is wide enough to show it beside the windows */
+@media (min-width: 1500px) { .bg-logo { display: flex; } }
+.brand-team { font: 400 .85rem/1 var(--pixel); color: var(--ink-2); }
+@media (max-width: 900px) { .brand-team { display: none; } }
+.team-credit { display: flex; align-items: center; gap: 14px; margin-top: 26px; padding: 12px 14px; background: #151838; color: #fff; border: 2px solid; border-color: var(--win-lo) var(--win-hi) var(--win-hi) var(--win-lo); max-width: 420px; }
+.team-credit p { margin: 0; }
+.team-credit b { display: block; font: 700 1.15rem/1.2 var(--pixel); letter-spacing: .04em; }
+.team-credit span { font: 400 .8rem/1.3 var(--mono); color: #c3c8f5; }
+.intro-team { display: flex; flex-direction: column; align-items: center; gap: 6px; margin-bottom: 8px; }
+.intro-team .emblem { filter: drop-shadow(0 0 10px rgba(62,227,143,.25)); }
+@media (max-width: 640px) { .intro-team .emblem { width: 64px; height: auto; } }
+
 /* ================= Title screen ================= */
 body.intro-open { overflow: hidden; }
 #intro {

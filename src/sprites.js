@@ -117,6 +117,28 @@ SPRITES.moon = disc(30, (x, y, c) => {
 });
 SPRITES.earth = disc(12, (x, y) => ((x * 7 + y * 3) % 11 < 3 || (x > 6 && y < 5) ? 'L' : (x + y) % 9 === 0 ? 'w' : 'b'));
 
+/**
+ * Team PARALLAX emblem: two laser stations on Earth whose beams converge on the Moon —
+ * parallax (two viewpoints, one target) meets lunar laser ranging. Original pixel art.
+ */
+export function parallaxEmblem({ size = 120, label = '', mark = true } = {}) {
+  const moon = sprite('moon', { px: 1 }).replace('<svg ', '<svg x="35" y="4" width="30" height="30" ');
+  const a11y = label ? `role="img" aria-label="${label}"` : 'aria-hidden="true"';
+  return `<svg class="emblem" viewBox="0 0 100 86" width="${size}" height="${Math.round(size * 0.86)}" shape-rendering="crispEdges" ${a11y}>
+    <rect x="4" y="66" width="92" height="4" fill="#cfcac0"/>
+    <rect x="4" y="70" width="92" height="3" fill="#8d887e"/>
+    <line x1="18" y1="62" x2="44" y2="28" stroke="#3ee38f" stroke-width="2.4" stroke-dasharray="4 2"/>
+    <line x1="82" y1="62" x2="56" y2="28" stroke="#3ee38f" stroke-width="2.4" stroke-dasharray="4 2"/>
+    ${moon}
+    <rect x="12" y="58" width="12" height="8" fill="#f6f3ec" stroke="#2b2233" stroke-width="1.5"/>
+    <rect x="16" y="54" width="4" height="4" fill="#3ee38f"/>
+    <rect x="76" y="58" width="12" height="8" fill="#f6f3ec" stroke="#2b2233" stroke-width="1.5"/>
+    <rect x="80" y="54" width="4" height="4" fill="#3ee38f"/>
+    <rect x="48" y="40" width="4" height="4" fill="#ffe08a"/>
+    ${mark ? '<text x="50" y="84" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="4.2" fill="#a8a3c9">SI-generated</text>' : ''}
+  </svg>`;
+}
+
 /** Render a sprite to an SVG string. Horizontal runs are merged to keep the markup small. */
 export function sprite(name, { px = 6, label = '', cls = '' } = {}) {
   const rows = SPRITES[name];
