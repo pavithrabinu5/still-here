@@ -1,0 +1,283 @@
+
+> still-here@1.0.0 test:e2e
+> node tests/e2e/run.mjs
+
+PASS  desktop: loading bar completed its 3 real steps
+PASS  desktop: SI watermark visible
+PASS  desktop: PRESS START is focused
+PASS  desktop: title screen closes and story is interactive
+PASS  desktop: opening visible
+PASS  desktop: hero image loaded
+PASS  desktop: no horizontal overflow at opening — excess 0px
+PASS  desktop: chapter 1 shown
+PASS  desktop: focus moved to chapter heading
+PASS  desktop: seismometer panel opens
+PASS  desktop: reflector panel opens
+PASS  desktop: wrong sort gives corrective feedback
+PASS  desktop: sorter completion message
+PASS  desktop: no horizontal overflow at site — excess 0px
+PASS  desktop: chapter 2 shown
+PASS  desktop: corner returns light at 15° — Back toward the source. Off by 0° at 15°. Try any angle.
+PASS  desktop: corner returns light at 75° — Back toward the source. Off by 0° at 75°. Try any angle.
+PASS  desktop: corner returns light at 52° — Back toward the source. Off by 0° at 52°. Try any angle.
+PASS  desktop: flat mirror misses at 50°
+PASS  desktop: flat mirror head-on returns
+PASS  desktop: no horizontal overflow at cube — excess 0px
+PASS  desktop: chapter 3 shown
+PASS  desktop: 2.5 s → 374,741 km — 374,741
+PASS  desktop: 2.6 s → 389,730 km
+PASS  desktop: fire disabled while pulse travels
+PASS  desktop: stopwatch ends at 2.500 s
+PASS  desktop: animation lasts the chosen round trip — 2.76 s
+PASS  desktop: no horizontal overflow at path — excess 0px
+PASS  desktop: chapter 4 shown
+PASS  desktop: arrow key moves tab
+PASS  desktop: End key selects last step
+PASS  desktop: no horizontal overflow at evidence — excess 0px
+PASS  desktop: chapter 5 shown
+PASS  desktop: wrong quiz answer explains
+PASS  desktop: quiz all correct
+PASS  desktop: no horizontal overflow at quiz — excess 0px
+PASS  desktop: ending shown
+PASS  desktop: folder starts closed with files out of tab order
+PASS  desktop: folder opens (aria-expanded)
+PASS  desktop: folder file opens its source
+PASS  desktop: folder closes again
+PASS  desktop: no horizontal overflow at end — excess 0px
+PASS  desktop: citation opens sources dialog
+PASS  desktop: cited source highlighted
+PASS  desktop: Escape closes dialog
+PASS  desktop: 5 of 5 discoveries earned by the journey
+PASS  desktop: back goes to chapter 5
+PASS  desktop: restart returns to opening
+PASS  desktop: restart clears quiz and sorter
+PASS  desktop: restart clears discoveries
+PASS  desktop: deep link #ch3 opens chapter 3
+PASS  desktop: deep link skips title screen
+PASS  desktop: no console errors/warnings
+PASS  desktop: no external network requests
+PASS  tablet: loading bar completed its 3 real steps
+PASS  tablet: SI watermark visible
+PASS  tablet: PRESS START is focused
+PASS  tablet: title screen closes and story is interactive
+PASS  tablet: opening visible
+PASS  tablet: hero image loaded
+PASS  tablet: no horizontal overflow at opening — excess 0px
+PASS  tablet: chapter 1 shown
+PASS  tablet: focus moved to chapter heading
+PASS  tablet: seismometer panel opens
+PASS  tablet: reflector panel opens
+PASS  tablet: wrong sort gives corrective feedback
+PASS  tablet: sorter completion message
+PASS  tablet: no horizontal overflow at site — excess 0px
+PASS  tablet: chapter 2 shown
+PASS  tablet: corner returns light at 15° — Back toward the source. Off by 0° at 15°. Try any angle.
+PASS  tablet: corner returns light at 75° — Back toward the source. Off by 0° at 75°. Try any angle.
+PASS  tablet: corner returns light at 52° — Back toward the source. Off by 0° at 52°. Try any angle.
+PASS  tablet: flat mirror misses at 50°
+PASS  tablet: flat mirror head-on returns
+PASS  tablet: no horizontal overflow at cube — excess 0px
+PASS  tablet: chapter 3 shown
+PASS  tablet: 2.5 s → 374,741 km — 374,741
+PASS  tablet: 2.6 s → 389,730 km
+PASS  tablet: fire disabled while pulse travels
+PASS  tablet: stopwatch ends at 2.500 s
+PASS  tablet: animation lasts the chosen round trip — 2.89 s
+PASS  tablet: no horizontal overflow at path — excess 0px
+PASS  tablet: chapter 4 shown
+PASS  tablet: arrow key moves tab
+PASS  tablet: End key selects last step
+PASS  tablet: no horizontal overflow at evidence — excess 0px
+PASS  tablet: chapter 5 shown
+PASS  tablet: wrong quiz answer explains
+PASS  tablet: quiz all correct
+PASS  tablet: no horizontal overflow at quiz — excess 0px
+PASS  tablet: ending shown
+PASS  tablet: folder starts closed with files out of tab order
+PASS  tablet: folder opens (aria-expanded)
+PASS  tablet: folder file opens its source
+PASS  tablet: folder closes again
+PASS  tablet: no horizontal overflow at end — excess 0px
+PASS  tablet: citation opens sources dialog
+PASS  tablet: cited source highlighted
+PASS  tablet: Escape closes dialog
+PASS  tablet: 5 of 5 discoveries earned by the journey
+PASS  tablet: back goes to chapter 5
+PASS  tablet: restart returns to opening
+PASS  tablet: restart clears quiz and sorter
+PASS  tablet: restart clears discoveries
+PASS  tablet: deep link #ch3 opens chapter 3
+PASS  tablet: deep link skips title screen
+PASS  tablet: no console errors/warnings
+PASS  tablet: no external network requests
+PASS  mobile: loading bar completed its 3 real steps
+PASS  mobile: SI watermark visible
+PASS  mobile: PRESS START is focused
+PASS  mobile: title screen closes and story is interactive
+PASS  mobile: opening visible
+PASS  mobile: hero image loaded
+PASS  mobile: no horizontal overflow at opening — excess 0px
+PASS  mobile: chapter 1 shown
+PASS  mobile: focus moved to chapter heading
+PASS  mobile: seismometer panel opens
+PASS  mobile: reflector panel opens
+PASS  mobile: wrong sort gives corrective feedback
+PASS  mobile: sorter completion message
+PASS  mobile: no horizontal overflow at site — excess 0px
+PASS  mobile: chapter 2 shown
+PASS  mobile: corner returns light at 15° — Back toward the source. Off by 0° at 15°. Try any angle.
+PASS  mobile: corner returns light at 75° — Back toward the source. Off by 0° at 75°. Try any angle.
+PASS  mobile: corner returns light at 52° — Back toward the source. Off by 0° at 52°. Try any angle.
+PASS  mobile: flat mirror misses at 50°
+PASS  mobile: flat mirror head-on returns
+PASS  mobile: no horizontal overflow at cube — excess 0px
+PASS  mobile: chapter 3 shown
+PASS  mobile: 2.5 s → 374,741 km — 374,741
+PASS  mobile: 2.6 s → 389,730 km
+PASS  mobile: fire disabled while pulse travels
+PASS  mobile: stopwatch ends at 2.500 s
+PASS  mobile: animation lasts the chosen round trip — 3.42 s
+PASS  mobile: no horizontal overflow at path — excess 0px
+PASS  mobile: chapter 4 shown
+PASS  mobile: arrow key moves tab
+PASS  mobile: End key selects last step
+PASS  mobile: no horizontal overflow at evidence — excess 0px
+PASS  mobile: chapter 5 shown
+PASS  mobile: wrong quiz answer explains
+PASS  mobile: quiz all correct
+PASS  mobile: no horizontal overflow at quiz — excess 0px
+PASS  mobile: ending shown
+PASS  mobile: folder starts closed with files out of tab order
+PASS  mobile: folder opens (aria-expanded)
+PASS  mobile: folder file opens its source
+PASS  mobile: folder closes again
+PASS  mobile: no horizontal overflow at end — excess 0px
+PASS  mobile: citation opens sources dialog
+PASS  mobile: cited source highlighted
+PASS  mobile: Escape closes dialog
+PASS  mobile: 5 of 5 discoveries earned by the journey
+PASS  mobile: back goes to chapter 5
+PASS  mobile: restart returns to opening
+PASS  mobile: restart clears quiz and sorter
+PASS  mobile: restart clears discoveries
+PASS  mobile: deep link #ch3 opens chapter 3
+PASS  mobile: deep link skips title screen
+PASS  mobile: no console errors/warnings
+PASS  mobile: no external network requests
+PASS  mobile-reduced: loading bar completed its 3 real steps
+PASS  mobile-reduced: SI watermark visible
+PASS  mobile-reduced: PRESS START is focused
+PASS  mobile-reduced: title screen closes and story is interactive
+PASS  mobile-reduced: opening visible
+PASS  mobile-reduced: hero image loaded
+PASS  mobile-reduced: no horizontal overflow at opening — excess 0px
+PASS  mobile-reduced: chapter 1 shown
+PASS  mobile-reduced: focus moved to chapter heading
+PASS  mobile-reduced: seismometer panel opens
+PASS  mobile-reduced: reflector panel opens
+PASS  mobile-reduced: wrong sort gives corrective feedback
+PASS  mobile-reduced: sorter completion message
+PASS  mobile-reduced: no horizontal overflow at site — excess 0px
+PASS  mobile-reduced: chapter 2 shown
+PASS  mobile-reduced: corner returns light at 15° — Back toward the source. Off by 0° at 15°. Try any angle.
+PASS  mobile-reduced: corner returns light at 75° — Back toward the source. Off by 0° at 75°. Try any angle.
+PASS  mobile-reduced: corner returns light at 52° — Back toward the source. Off by 0° at 52°. Try any angle.
+PASS  mobile-reduced: flat mirror misses at 50°
+PASS  mobile-reduced: flat mirror head-on returns
+PASS  mobile-reduced: no horizontal overflow at cube — excess 0px
+PASS  mobile-reduced: chapter 3 shown
+PASS  mobile-reduced: 2.5 s → 374,741 km — 374,741
+PASS  mobile-reduced: 2.6 s → 389,730 km
+PASS  mobile-reduced: stopwatch ends at 2.500 s
+PASS  mobile-reduced: reduced motion skips animation — 0.07 s
+PASS  mobile-reduced: no horizontal overflow at path — excess 0px
+PASS  mobile-reduced: chapter 4 shown
+PASS  mobile-reduced: arrow key moves tab
+PASS  mobile-reduced: End key selects last step
+PASS  mobile-reduced: no horizontal overflow at evidence — excess 0px
+PASS  mobile-reduced: chapter 5 shown
+PASS  mobile-reduced: wrong quiz answer explains
+PASS  mobile-reduced: quiz all correct
+PASS  mobile-reduced: no horizontal overflow at quiz — excess 0px
+PASS  mobile-reduced: ending shown
+PASS  mobile-reduced: folder starts closed with files out of tab order
+PASS  mobile-reduced: folder opens (aria-expanded)
+PASS  mobile-reduced: folder file opens its source
+PASS  mobile-reduced: folder closes again
+PASS  mobile-reduced: no horizontal overflow at end — excess 0px
+PASS  mobile-reduced: citation opens sources dialog
+PASS  mobile-reduced: cited source highlighted
+PASS  mobile-reduced: Escape closes dialog
+PASS  mobile-reduced: 5 of 5 discoveries earned by the journey
+PASS  mobile-reduced: back goes to chapter 5
+PASS  mobile-reduced: restart returns to opening
+PASS  mobile-reduced: restart clears quiz and sorter
+PASS  mobile-reduced: restart clears discoveries
+PASS  mobile-reduced: deep link #ch3 opens chapter 3
+PASS  mobile-reduced: deep link skips title screen
+PASS  mobile-reduced: no console errors/warnings
+PASS  mobile-reduced: no external network requests
+PASS  offline: loading bar completed its 3 real steps
+PASS  offline: SI watermark visible
+PASS  offline: PRESS START is focused
+PASS  offline: title screen closes and story is interactive
+PASS  offline: opening visible
+PASS  offline: hero image loaded
+PASS  offline: no horizontal overflow at opening — excess 0px
+PASS  offline: chapter 1 shown
+PASS  offline: focus moved to chapter heading
+PASS  offline: seismometer panel opens
+PASS  offline: reflector panel opens
+PASS  offline: wrong sort gives corrective feedback
+PASS  offline: sorter completion message
+PASS  offline: no horizontal overflow at site — excess 0px
+PASS  offline: chapter 2 shown
+PASS  offline: corner returns light at 15° — Back toward the source. Off by 0° at 15°. Try any angle.
+PASS  offline: corner returns light at 75° — Back toward the source. Off by 0° at 75°. Try any angle.
+PASS  offline: corner returns light at 52° — Back toward the source. Off by 0° at 52°. Try any angle.
+PASS  offline: flat mirror misses at 50°
+PASS  offline: flat mirror head-on returns
+PASS  offline: no horizontal overflow at cube — excess 0px
+PASS  offline: chapter 3 shown
+PASS  offline: 2.5 s → 374,741 km — 374,741
+PASS  offline: 2.6 s → 389,730 km
+PASS  offline: fire disabled while pulse travels
+PASS  offline: stopwatch ends at 2.500 s
+PASS  offline: animation lasts the chosen round trip — 3.42 s
+PASS  offline: no horizontal overflow at path — excess 0px
+PASS  offline: chapter 4 shown
+PASS  offline: arrow key moves tab
+PASS  offline: End key selects last step
+PASS  offline: no horizontal overflow at evidence — excess 0px
+PASS  offline: chapter 5 shown
+PASS  offline: wrong quiz answer explains
+PASS  offline: quiz all correct
+PASS  offline: no horizontal overflow at quiz — excess 0px
+PASS  offline: ending shown
+PASS  offline: folder starts closed with files out of tab order
+PASS  offline: folder opens (aria-expanded)
+PASS  offline: folder file opens its source
+PASS  offline: folder closes again
+PASS  offline: no horizontal overflow at end — excess 0px
+PASS  offline: citation opens sources dialog
+PASS  offline: cited source highlighted
+PASS  offline: Escape closes dialog
+PASS  offline: 5 of 5 discoveries earned by the journey
+PASS  offline: back goes to chapter 5
+PASS  offline: restart returns to opening
+PASS  offline: restart clears quiz and sorter
+PASS  offline: restart clears discoveries
+PASS  offline: deep link #ch3 opens chapter 3
+PASS  offline: deep link skips title screen
+PASS  offline: no console errors/warnings
+PASS  offline: no external network requests
+PASS  keyboard: focus stays on title screen while it is open
+PASS  keyboard: Enter on PRESS START moves focus to the story heading
+PASS  keyboard: skip link becomes visible on focus
+PASS  keyboard: can reach primary action
+PASS  keyboard: Enter advances chapter
+PASS  keyboard: visible focus outline — dashed 3px
+PASS  keyboard: hotspot operable with Enter
+PASS  no-JS: core explanation still readable
+
+277/277 checks passed
