@@ -4,7 +4,7 @@
 
 A short interactive science story for ages 10–14 and casual space fans. It asks: *how can equipment left on the Moon decades ago still help us do science without electrical power there?* The answer comes through the Apollo 11 Laser Ranging Retro-Reflector and the Earth-based work that keeps it useful.
 
-**Live site:** https://regal-palmier-3d98c9.netlify.app/ · **Demo video (≤30 s):** [`demo/still-here-demo.webm`](demo/still-here-demo.webm)
+**Live site:** https://pavithrabinu5.github.io/still-here/ · **Demo video (≤30 s):** [`demo/still-here-demo.webm`](demo/still-here-demo.webm)
 
 The story has seven chapters and takes about 6–10 minutes: title screen → opening → two neighbours (archival-photo inspection + Moon/Earth sorter) → corner-cube mirror test → timed round trip with c·t/2 → echo-to-evidence steps → three applied questions → ending with a "Mission files" folder of key sources. It is styled as a pixel-art retro desktop with walking characters and five discovery stars earned at real learning milestones. Every factual statement links to a NASA source.
 
