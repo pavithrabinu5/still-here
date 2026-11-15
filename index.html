@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Still Here — the Apollo 11 laser reflector</title>
+  <meta name="description" content="An interactive science story for ages 10–14: how a mirror left on the Moon in 1969 still helps scientists measure the Earth–Moon distance without any power at the reflector." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23cfcac0'/%3E%3Cpath d='M9 22 L16 9 L23 22 Z' fill='none' stroke='%2337e08a' stroke-width='2.4'/%3E%3C/svg%3E" />
+  <meta name="author" content="Team PARALLAX" />
+  <meta name="si-disclosure" content="Code, illustrations and text drafts produced with SI assistance (Claude, Anthropic) and reviewed by Team PARALLAX; claims checked against NASA sources. Photographs are unaltered NASA archival images." />
+  <script type="module" crossorigin src="./assets/index-BgL_OsFx.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-Dnufg9cx.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to the story</a>
+
+  <header class="topbar">
+    <a class="brand" href="#start" data-goto="0"><span class="brand-mark" aria-hidden="true"></span>Still Here</a>
+    <nav class="progress" aria-label="Story chapters">
+      <ol id="progress-list"></ol>
+    </nav>
+    <button class="btn-quiet" type="button" id="open-sources" aria-haspopup="dialog">Sources<span class="hide-sm"> &amp; credits</span></button>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <!-- 0 · OPENING -->
+    <section class="chapter chapter-open" data-chapter="0" id="start" aria-labelledby="h0" data-title="Left behind">
+      <figure class="hero-photo">
+        <img src="./img/as11-40-5942-w1000.jpg" width="975" height="1000" alt="Archival photo: astronaut Buzz Aldrin walks across grey lunar soil carrying a seismometer package in his left hand and a flat box — the laser reflector — in his right." fetchpriority="high" />
+        <figcaption><span class="tag tag-archival">Archival photo</span> AS11-40-5942 · Neil Armstrong, 20 July 1969 · NASA <button class="cite" type="button" data-src="S6">S6</button></figcaption>
+      </figure>
+      <div class="open-copy">
+        <p class="kicker">Sea of Tranquility · 20 July 1969 <button class="cite" type="button" data-src="S2">S2</button></p>
+        <h1 id="h0" tabindex="-1">The box in his right hand<br /><em>is still working.</em></h1>
+        <p class="lede">Buzz Aldrin is carrying two experiments. The one in his left hand needed solar power and fell silent in 1969. The one in his right hand has <strong>no battery, no solar panel and no radio</strong> <button class="cite" type="button" data-src="S1">S1</button> — and scientists on Earth still use it <button class="cite" type="button" data-src="S3">S3</button>.</p>
+        <p class="question">How can equipment left on the Moon decades ago still help us do science — without any electrical power there?</p>
+        <div class="guide guide-open">
+          <span class="cast-slot" data-sprite="retro" data-label="Cartoon of the reflector as a mascot"></span>
+          <blockquote class="bubble">
+            <span class="tag tag-fiction">Imagined voice</span>
+            “I can’t send you anything. I can only give back what you send me.”
+          </blockquote>
+        </div>
+        <div class="actions"><button class="btn" type="button" data-next>Start the mission <span aria-hidden="true">→</span></button></div>
+      </div>
+    </section>
+
+    <!-- 1 · THE SITE: what needs power? -->
+    <section class="chapter" data-chapter="1" aria-labelledby="h1" data-title="Two neighbours">
+      <div class="chapter-head">
+        <p class="kicker">Chapter 1 · Two neighbours</p>
+        <h2 id="h1" tabindex="-1">Same mission, same patch of ground. Very different needs.</h2>
+        <p>Armstrong photographed the two experiments a few minutes after Aldrin set them up. Select each one to inspect it.</p>
+      </div>
+      <div class="site">
+        <figure class="site-photo">
+          <div class="photo-wrap">
+          <img src="./img/as11-40-5948-w1100.jpg" width="1100" height="1100" alt="Archival photo: in the foreground, a copper-coloured seismometer with two flat solar panels. Beyond it, a small pale angled panel — the laser reflector. Aldrin stands at left; the lunar module and flag are in the background." loading="lazy" />
+          <span class="ring ring-lrrr" style="left:39.3%;top:50%" aria-hidden="true"></span>
+          <span class="ring ring-pse" style="left:40.5%;top:60%" aria-hidden="true"></span>
+          <button class="hotspot" type="button" style="left:47%;top:70%" data-hotspot="pse" aria-pressed="false"><span class="sr-only">Inspect the </span>Seismometer</button>
+          <button class="hotspot" type="button" style="left:27%;top:42%" data-hotspot="lrrr" aria-pressed="false"><span class="sr-only">Inspect the </span>Reflector</button>
+          </div>
+          <figcaption><span class="tag tag-archival">Archival photo</span> AS11-40-5948 · Neil Armstrong, 20 July 1969 · NASA <button class="cite" type="button" data-src="S7">S7</button> · Labels added by us.</figcaption>
+        </figure>
+        <div class="site-panel" aria-live="polite">
+          <div class="inspect" data-panel="none" hidden>
+            <p class="muted">Choose <strong>Seismometer</strong> or <strong>Reflector</strong> on the photo.</p>
+          </div>
+          <div class="inspect" data-panel="pse">
+            <h3>Passive Seismic Experiment</h3>
+            <ul class="facts">
+              <li><span>Power</span> Two solar panels — so it worked only in lunar daytime <button class="cite" type="button" data-src="S1">S1</button></li>
+              <li><span>Radio</span> Antenna to send data and receive commands from Earth <button class="cite" type="button" data-src="S1">S1</button></li>
+              <li><span>Job</span> Listen for moonquakes and learn about the Moon’s interior <button class="cite" type="button" data-src="S1">S1</button></li>
+              <li><span>Fate</span> Stopped accepting commands on 27 August 1969 <button class="cite" type="button" data-src="S1">S1</button></li>
+            </ul>
+          </div>
+          <div class="inspect" data-panel="lrrr">
+            <h3>Laser Ranging Retro-Reflector</h3>
+            <ul class="facts">
+              <li><span>Power</span> None — it “required no power” <button class="cite" type="button" data-src="S1">S1</button></li>
+              <li><span>Radio</span> None. It sends no data of its own.</li>
+              <li><span>Made of</span> 100 glass “corner cubes” <button class="cite" type="button" data-src="S4">S4</button></li>
+              <li><span>Placed</span> About 5 m north-north-west of the seismometer <button class="cite" type="button" data-src="S1">S1</button></li>
+            </ul>
+            <p class="note">Both were part of a small package called EASEP, the forerunner of later Apollo science stations <button class="cite" type="button" data-src="S1">S1</button>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sorter" id="sorter">
+        <h3>So where is the powered equipment?</h3>
+        <p>A laser-ranging measurement needs every part below. Decide where each one is. <span class="muted">(All are real parts of the system.)</span></p>
+        <ul class="sort-list" id="sort-list"></ul>
+        <noscript><p>All the powered parts — the laser, telescope, detector and clock — are on Earth. Only the glass corner cubes are on the Moon.</p></noscript>
+        <p class="sort-result" id="sort-result" aria-live="polite"></p>
+      </div>
+      <div class="actions">
+        <button class="btn-quiet" type="button" data-prev>← Back</button>
+        <button class="btn" type="button" data-next>How can a mirror aim itself? <span aria-hidden="true">→</span></button>
+      </div>
+    </section>
+
+    <!-- 2 · CORNER CUBE -->
+    <section class="chapter" data-chapter="2" aria-labelledby="h2" data-title="The trick">
+      <div class="chapter-head">
+        <p class="kicker">Chapter 2 · The trick in the glass</p>
+        <h2 id="h2" tabindex="-1">A mirror that sends light back the way it came.</h2>
+        <p>Nobody on the Moon aims the reflector. The Moon moves, Earth turns, and the laser station is in a different place every night. So how does the light find its way home? Change the angle of the incoming beam.</p>
+      </div>
+      <div class="cube">
+        <div class="cube-stage">
+          <svg id="cube-svg" viewBox="-40 -30 260 200" role="img" aria-labelledby="cube-title cube-desc">
+            <title id="cube-title">Illustration of light reflecting from mirrors</title>
+            <desc id="cube-desc">Updated as you change the controls.</desc>
+          </svg>
+          <p class="tag tag-illus">Illustration · 2-D slice. A real corner cube uses three mirror faces at right angles.</p>
+        </div>
+        <div class="cube-controls">
+          <fieldset class="seg">
+            <legend>Reflector type</legend>
+            <label><input type="radio" name="mode" value="corner" checked /> Corner (2 faces)</label>
+            <label><input type="radio" name="mode" value="flat" /> Flat mirror</label>
+          </fieldset>
+          <label class="range">
+            <span>Incoming beam angle <output id="angle-out">40°</output></span>
+            <input type="range" id="angle" min="15" max="75" step="1" value="40" />
+          </label>
+          <p class="readout" id="cube-readout" aria-live="polite"></p>
+          <p class="explain">In the corner, light bounces off one face, then the other. Two right-angled bounces reverse its direction exactly, whatever the angle. Each Apollo 11 corner cube does this with three faces, in 3-D <button class="cite" type="button" data-src="S4">S4</button>. That is the whole “machine”: shaped glass, with nothing to switch on.</p>
+        </div>
+      </div>
+      <div class="actions">
+        <button class="btn-quiet" type="button" data-prev>← Back</button>
+        <button class="btn" type="button" data-next>Send a pulse to the Moon <span aria-hidden="true">→</span></button>
+      </div>
+    </section>
+
+    <!-- 3 · LIGHT PATH -->
+    <section class="chapter chapter-wide" data-chapter="3" aria-labelledby="h3" data-title="The round trip">
+      <div class="chapter-head">
+        <p class="kicker">Chapter 3 · The round trip</p>
+        <h2 id="h3" tabindex="-1">All the timing happens on Earth.</h2>
+        <p>A laser station such as Apache Point in New Mexico fires a short pulse through a 3.5-metre telescope <button class="cite" type="button" data-src="S3">S3</button>. The station notes when the pulse leaves and when light comes back. The reflector records nothing.</p>
+      </div>
+      <div class="path">
+        <svg id="path-svg" viewBox="0 0 1000 310" role="img" aria-labelledby="path-title path-desc">
+          <title id="path-title">Schematic: a light pulse travels from a telescope on Earth to the reflector on the Moon and back</title>
+          <desc id="path-desc">Earth on the left with a telescope, the Moon on the right with the reflector. Not to scale.</desc>
+          <defs>
+            <radialGradient id="g-earth" cx="40%" cy="35%"><stop offset="0" stop-color="#4f7fa8"/><stop offset="1" stop-color="#1c3550"/></radialGradient>
+            <radialGradient id="g-moon" cx="40%" cy="35%"><stop offset="0" stop-color="#d8d3c8"/><stop offset="1" stop-color="#8d887e"/></radialGradient>
+          </defs>
+          <circle cx="90" cy="150" r="78" fill="url(#g-earth)"/>
+          <rect x="150" y="134" width="26" height="32" rx="3" class="station"/>
+          <text x="24" y="254" class="svg-label">Earth station</text>
+          <text x="24" y="274" class="svg-sub">laser · telescope</text>
+          <text x="24" y="292" class="svg-sub">detector · clock</text>
+          <circle cx="905" cy="150" r="44" fill="url(#g-moon)"/>
+          <rect x="852" y="141" width="12" height="18" class="reflector"/>
+          <text x="905" y="232" class="svg-label" text-anchor="middle">Reflector on the Moon</text>
+          <text x="905" y="252" class="svg-sub" text-anchor="middle">glass only · no power</text>
+          <line x1="176" y1="144" x2="852" y2="144" class="lane"/>
+          <line x1="852" y1="156" x2="176" y2="156" class="lane"/>
+          <text x="514" y="128" class="svg-sub" text-anchor="middle">out →</text>
+          <text x="514" y="182" class="svg-sub" text-anchor="middle">← back</text>
+          <line id="beam-out" x1="176" y1="144" x2="176" y2="144" class="beam"/>
+          <line id="beam-back" x1="852" y1="156" x2="852" y2="156" class="beam"/>
+          <circle id="pulse" cx="176" cy="144" r="6" class="pulse" opacity="0"/>
+          <text x="500" y="40" class="svg-warn" text-anchor="middle">SCHEMATIC · NOT TO SCALE</text>
+        </svg>
+        <ul class="path-legend" aria-hidden="true">
+          <li><b>Left · Earth station</b> laser, telescope, detector, clock</li>
+          <li><b>Right · Reflector on the Moon</b> glass only, no power</li>
+          <li class="warn">Schematic · not to scale</li>
+        </ul>
+        <div class="path-controls">
+          <div class="clock" aria-live="off">
+            <span class="clock-label">Station stopwatch <span class="muted">(illustrative)</span></span>
+            <span class="clock-val" id="clock">0.000 s</span>
+          </div>
+          <button class="btn" type="button" id="fire">Fire a pulse</button>
+          <p class="muted small" id="fire-note">The animation runs for the round-trip time you choose below, in real time. The picture is squeezed: the real Moon is much farther away, compared with the size of Earth, than it looks here.</p>
+        </div>
+      </div>
+
+      <div class="calc" id="calc">
+        <div class="calc-in">
+          <label class="range">
+            <span>Round-trip time <span class="muted">(illustrative input)</span> <output id="rt-out">2.500 s</output></span>
+            <input type="range" id="rt" min="2.35" max="2.70" step="0.005" value="2.5" aria-describedby="rt-help" />
+          </label>
+          <p id="rt-help" class="muted small">NASA describes the round trip as taking “about 2.5 seconds on average” <button class="cite" type="button" data-src="S4">S4</button>. It varies because the Moon’s distance changes. These values are for practice — they are not real observations.</p>
+        </div>
+        <div class="calc-out" aria-live="polite">
+          <p class="eq">distance = <span class="v">speed of light</span> × <span class="nw"><span class="v">time</span> ÷ <strong>2</strong></span></p>
+          <p class="eq-num" id="eq-num"></p>
+          <p class="result"><span id="dist">—</span> <span class="unit">km, Earth station to reflector</span></p>
+          <details class="why">
+            <summary>Why divide by two?</summary>
+            <p>The stopwatch runs while the light goes <em>out and back</em>. That is twice the distance. Half the time is the trip to the Moon.</p>
+          </details>
+        </div>
+      </div>
+      <aside class="limits" aria-label="Limits of this calculation">
+        <strong>What this simple formula leaves out.</strong> Real lunar laser ranging must account for light slowed and scattered by Earth’s atmosphere (twice), and for the exact, constantly changing positions of the station and the reflector <button class="cite" type="button" data-src="S4">S4</button>. Stations combine many returns and calibrate their equipment <button class="cite" type="button" data-src="S3">S3</button>. That is how they reach millimetre-level precision <button class="cite" type="button" data-src="S3">S3</button>. This page cannot do that.
+      </aside>
+      <div class="actions">
+        <button class="btn-quiet" type="button" data-prev>← Back</button>
+        <button class="btn" type="button" data-next>What comes back? <span aria-hidden="true">→</span></button>
+      </div>
+    </section>
+
+    <!-- 4 · EVIDENCE -->
+    <section class="chapter" data-chapter="4" aria-labelledby="h4" data-title="From echo to evidence">
+      <div class="chapter-head">
+        <p class="kicker">Chapter 4 · From echo to evidence</p>
+        <h2 id="h4" tabindex="-1">Catching light is only the first step.</h2>
+        <p>Light reaching the Moon spreads out — from a few metres wide on the ground to more than 2 km at the Moon <button class="cite" type="button" data-src="S4">S4</button>. By some estimates, only about <strong>1 in 25 million</strong> photons hits the Apollo 11 reflector. Only about <strong>1 in 250 million</strong> of those makes it back <button class="cite" type="button" data-src="S4">S4</button>. So how do a few returning photons become knowledge? Step through the work.</p>
+      </div>
+      <div class="pipeline">
+        <ol class="steps" role="tablist" aria-label="Steps from detection to knowledge" id="steps">
+          <li role="presentation"><button role="tab" type="button" id="tab-0" aria-controls="step-0" aria-selected="true">1 · Detect</button></li>
+          <li role="presentation"><button role="tab" type="button" id="tab-1" aria-controls="step-1" aria-selected="false" tabindex="-1">2 · Calibrate</button></li>
+          <li role="presentation"><button role="tab" type="button" id="tab-2" aria-controls="step-2" aria-selected="false" tabindex="-1">3 · Check &amp; combine</button></li>
+          <li role="presentation"><button role="tab" type="button" id="tab-3" aria-controls="step-3" aria-selected="false" tabindex="-1">4 · Repeat for decades</button></li>
+          <li role="presentation"><button role="tab" type="button" id="tab-4" aria-controls="step-4" aria-selected="false" tabindex="-1">5 · Interpret</button></li>
+        </ol>
+        <div class="step-panels">
+          <div class="step" role="tabpanel" id="step-0" aria-labelledby="tab-0" tabindex="0">
+            <h3>Detect a returning photon</h3>
+            <p>Apache Point uses a large telescope and sensitive light detectors called avalanche photodiodes to catch the returning photons <button class="cite" type="button" data-src="S3">S3</button>.</p>
+            <p class="cannot"><strong>One return can tell you:</strong> light made the trip, and roughly how long it took. <strong>It cannot tell you</strong> that the Moon is drifting away, or what is inside it.</p>
+          </div>
+          <div class="step" role="tabpanel" id="step-1" aria-labelledby="tab-1" tabindex="0">
+            <h3>Calibrate the instrument</h3>
+            <p>The station’s own equipment adds tiny timing delays. In late 2016 Apache Point installed an Absolute Calibration System. Later, the team reprocessed <em>all</em> of the station’s data to make it more accurate <button class="cite" type="button" data-src="S3">S3</button>.</p>
+            <p class="cannot">A measurement is only as good as your knowledge of your own instrument.</p>
+          </div>
+          <div class="step" role="tabpanel" id="step-2" aria-labelledby="tab-2" tabindex="0">
+            <h3>Check quality and combine returns</h3>
+            <p>Raw detections are reduced into summary measurements called “normal points”. NASA’s team added a quality-control process to find centimetre-level biases and remove bad points before publishing <button class="cite" type="button" data-src="S3">S3</button>.</p>
+            <p class="cannot">Some reflectors now return only about a tenth of the expected signal. Dust is one suspected cause, still being studied <button class="cite" type="button" data-src="S4">S4</button>.</p>
+          </div>
+          <div class="step" role="tabpanel" id="step-3" aria-labelledby="tab-3" tabindex="0">
+            <h3>Repeat — for decades, from many places</h3>
+            <p>Apache Point ranges several times a month to all five reflector arrays on the Moon: three placed by Apollo astronauts and two on the Soviet Lunokhod rovers <button class="cite" type="button" data-src="S3">S3</button>. Its data from 2006 to early 2024 are now in a public NASA archive <button class="cite" type="button" data-src="S3">S3</button>.</p>
+            <p class="cannot">“Laser-ranging science is a long game.” — Erwan Mazarico, NASA Goddard <button class="cite" type="button" data-src="S4">S4</button></p>
+          </div>
+          <div class="step" role="tabpanel" id="step-4" aria-labelledby="tab-4" tabindex="0">
+            <h3>Interpret with models</h3>
+            <p>Over many years and several reflectors, scientists found that the Moon is slowly moving away from Earth, about 3.8 cm per year. They also found signs that the Moon has a fluid core, from tiny wobbles in its rotation <button class="cite" type="button" data-src="S4">S4</button>.</p>
+            <p class="cannot">These results come from long records across several reflectors and stations — not from Apollo 11 alone, and never from a single pulse.</p>
+          </div>
+        </div>
+      </div>
+      <div class="actions">
+        <button class="btn-quiet" type="button" data-prev>← Back</button>
+        <button class="btn" type="button" data-next>Test what you’ve learned <span aria-hidden="true">→</span></button>
+      </div>
+    </section>
+
+    <!-- 5 · APPLY -->
+    <section class="chapter" data-chapter="5" aria-labelledby="h5" data-title="Your turn">
+      <div class="chapter-head">
+        <p class="kicker">Chapter 5 · Your turn</p>
+        <h2 id="h5" tabindex="-1">Three questions from the mission team.</h2>
+        <p>Pick an answer to see why it’s right or wrong. You can change your mind.</p>
+      </div>
+      <div id="quiz" class="quiz"></div>
+      <noscript><p>The questions need JavaScript. Key ideas: the reflector only returns light sent from Earth; one-way distance = speed of light × round-trip time ÷ 2; one detection is one data point in a long record, not a discovery.</p></noscript>
+      <p class="quiz-score" id="quiz-score" aria-live="polite"></p>
+      <div class="actions">
+        <button class="btn-quiet" type="button" data-prev>← Back</button>
+        <button class="btn" type="button" data-next>Finish the story <span aria-hidden="true">→</span></button>
+      </div>
+    </section>
+
+    <!-- 6 · ENDING -->
+    <section class="chapter chapter-end" data-chapter="6" aria-labelledby="h6" data-title="Still here">
+      <div class="end-copy">
+        <p class="kicker">Epilogue</p>
+        <h2 id="h6" tabindex="-1">Still here.</h2>
+        <div class="trio">
+          <div><h3>The hardware</h3><p>100 glass corner cubes, set down by Buzz Aldrin in 1969. No battery, no radio, nothing to switch on <button class="cite" type="button" data-src="S1">S1</button> <button class="cite" type="button" data-src="S4">S4</button>.</p></div>
+          <div><h3>The people</h3><p>On Earth, teams keep the lasers, telescopes, detectors and calibration running. At Apache Point, New Mexico State University runs daily operations for the NASA Space Geodesy Network <button class="cite" type="button" data-src="S3">S3</button>.</p></div>
+          <div><h3>The knowledge</h3><p>Decades of careful, repeated measurements to several reflectors have shown the Moon drifting away, and given clues to its insides <button class="cite" type="button" data-src="S4">S4</button>.</p></div>
+        </div>
+        <p class="answer">The answer to our question: the reflector doesn’t need power because <strong>it only gives back light</strong>. The energy, the timing and the science all happen on Earth. The reflector just has to stay where it was put — and it has.</p>
+        <div class="cast" aria-label="The cast of this story (cartoons)" role="group">
+          <figure><span class="cast-slot" data-sprite="retro-happy"></span><figcaption>The reflector: still here</figcaption></figure>
+          <figure><span class="cast-slot" data-sprite="dome"></span><figcaption>The laser station on Earth</figcaption></figure>
+          <figure><span class="cast-slot" data-sprite="sci"></span><figcaption>The people who keep it running</figcaption></figure>
+          <figure><span class="cast-slot" data-sprite="seis"></span><figcaption>The seismometer: retired since 1969</figcaption></figure>
+        </div>
+
+        <div class="folder" id="folder">
+          <div class="folder-back" aria-hidden="true"><span class="folder-tab"></span></div>
+          <ul class="folder-files" id="folder-files" aria-label="Mission files: the sources behind this story">
+            <li style="--slot:-1.5;--i:0"><button type="button" class="file" data-file-src="S1"><b>EASEP record</b><span>NSSDCA · 1969-059C</span><i></i><i></i><i></i></button></li>
+            <li style="--slot:-0.5;--i:1"><button type="button" class="file" data-file-src="S3"><b>Apache Point</b><span>NASA Goddard</span><i></i><i></i><i></i></button></li>
+            <li style="--slot:0.5;--i:2"><button type="button" class="file" data-file-src="S4"><b>Laser beams article</b><span>NASA · 2020</span><i></i><i></i><i></i></button></li>
+            <li style="--slot:1.5;--i:3"><button type="button" class="file file-photo" data-file-src="S7"><b>AS11-40-5948</b><span>Archival photo</span></button></li>
+          </ul>
+          <button type="button" class="folder-front" id="folder-front" aria-expanded="false" aria-controls="folder-files">
+            <span class="folder-label">Mission files</span>
+            <span class="folder-meta">4 key sources · click to open</span>
+          </button>
+        </div>
+        <blockquote class="narration">
+          <span class="tag tag-fiction">Imagined voice</span>
+          <p>“Send me light, and I’ll send it home.”</p>
+        </blockquote>
+        <div class="actions">
+          <button class="btn-quiet" type="button" data-prev>← Back</button>
+          <button class="btn" type="button" id="restart">Start again</button>
+          <button class="btn-quiet" type="button" data-open-sources>See every source</button>
+        </div>
+        <p class="fineprint">This is an educational story. It is not a live instrument, and its numbers are not real observations. The voice of the reflector is imagined; every other statement is linked to a source.</p>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="sources" aria-labelledby="sources-h">
+    <div class="dlg-head">
+      <h2 id="sources-h">Sources &amp; credits</h2>
+      <button type="button" class="btn-quiet" id="close-sources">Close</button>
+    </div>
+    <div class="dlg-body">
+      <h3>Sources</h3>
+      <ol class="srclist">
+        <li id="src-S1"><b>S1</b> NASA NSSDCA. “Apollo 11 Lunar Module / EASEP” (1969-059C). <a href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059C">nssdc.gsfc.nasa.gov</a> — EASEP parts, solar power, lunar-day-only operation, end of commands 27 Aug 1969, reflector “required no power”, placed ~5 m NNW.</li>
+        <li id="src-S2"><b>S2</b> NASA NSSDCA. “Apollo 11 (25th anniversary)”. <a href="https://nssdc.gsfc.nasa.gov/planetary/lunar/apollo11.html">nssdc.gsfc.nasa.gov</a> — landing 20 July 1969, Sea of Tranquility, Aldrin deploying EASEP.</li>
+        <li id="src-S3"><b>S3</b> NASA Goddard, Space Geodesy Project. “Apache Point”. <a href="https://earth.gsfc.nasa.gov/geo/networks/sgp/sites/apache-point">earth.gsfc.nasa.gov</a> — 3.5 m telescope, avalanche photodiodes, millimetre-level precision, NMSU operations since 2021, ranging several times a month to five arrays, calibration system (2016), normal points, quality control, 2006–2024 data release.</li>
+        <li id="src-S4"><b>S4</b> NASA (L. Shekhtman, Goddard), 10 Aug 2020. “Laser Beams Reflected Between Earth and Moon Boost Science”. <a href="https://www.nasa.gov/missions/laser-beams-reflected-between-earth-and-moon-boost-science/">nasa.gov</a> — 100 corner cubes, five arrays, ~2.5 s round trip, beam spreading, photon odds “according to some estimates”, 3.8 cm/yr drift, fluid core, dust and weak signals.</li>
+        <li id="src-S5"><b>S5</b> Apollo Lunar Surface Journal, Apollo 11 Image Library (NASA-hosted). <a href="https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/images11.html">nasa.gov</a> — photo sequence and timing of the EASEP deployment.</li>
+        <li id="src-S6"><b>S6</b> NASA Image and Video Library, AS11-40-5942 (JSC). <a href="https://images.nasa.gov/details/as11-40-5942">images.nasa.gov</a> — Aldrin carrying the seismometer (left hand) and reflector (right hand); photo by Armstrong.</li>
+        <li id="src-S7"><b>S7</b> NASA Image and Video Library, AS11-40-5948 (JSC). <a href="https://images.nasa.gov/details/as11-40-5948">images.nasa.gov</a> — seismometer in the foreground, reflector beyond it; photo by Armstrong.</li>
+        <li id="src-S8"><b>S8</b> Speed of light in vacuum, 299 792 458 m/s (exact, SI definition). NIST CODATA. <a href="https://physics.nist.gov/cgi-bin/cuu/Value?c">physics.nist.gov</a></li>
+      </ol>
+      <h3>Asset credits</h3>
+      <ul class="credits">
+        <li><b>Photographs</b> AS11-40-5942 and AS11-40-5948: NASA / Neil Armstrong, Apollo 11, 20 July 1969, via the NASA Image and Video Library. NASA still images are generally not subject to US copyright. Use follows NASA’s media usage guidelines and does not imply NASA endorsement.</li>
+        <li><b>Illustrations and pixel characters</b> The mirror diagram, Earth–Moon schematic and pixel characters are original illustrations, not archival images and not to scale. The characters are cartoons, not depictions of real people or exact hardware.</li>
+        <li><b>Fonts</b> Pixelify Sans (SIL Open Font License 1.1), hosted locally; system fonts for body text.</li>
+        <li><b>Labels</b> Hotspot labels on the archival photo were added by the team.</li>
+      </ul>
+      <h3>Use of SI tools</h3>
+      <ul class="credits">
+        <li>Code, illustrations, tests and text drafts were produced with an SI coding assistant (Claude, Anthropic) and reviewed by Team PARALLAX. Every factual claim was checked against the NASA sources above. SI-generated illustrations are marked with the on-screen watermark “Illustrations: SI-generated”.</li>
+        <li>The photographs are unaltered NASA archival images. No audio or video is SI-generated. No NASA logos or branding were generated or modified.</li>
+      </ul>
+      <h3>What is real, and what is not</h3>
+      <ul class="credits">
+        <li><b>Documented history:</b> every statement marked with a source button.</li>
+        <li><b>Imagined:</b> the reflector mascot’s speech bubbles, each labelled “Imagined voice”.</li>
+        <li><b>Illustrative numbers:</b> the round-trip time slider and stopwatch are practice values, not observations. The speed of light is exact.</li>
+        <li><b>Simplified:</b> the light-path calculation ignores the atmosphere, relativity, motion and calibration. The mirror diagram is 2-D; real corner cubes are 3-D.</li>
+      </ul>
+      <p class="muted small">Built for the 2026 NASA Space Apps Challenge, “Abandoned but not Forgotten” <a href="https://www.spaceappschallenge.org/2026/challenges/nasas-discarded-equipment-storytelling/">challenge page</a>. NASA does not endorse this project.</p>
+    </div>
+  </dialog>
+
+</body>
+</html>
