@@ -63,8 +63,5 @@ Full list in-app (Sources & credits) and in `docs/CLAIM-LEDGER.md`.
 ## Scientific limitations
 This is an educational story, not a ranging instrument, a new result or a reconstruction of a real observation. The c·t/2 calculation ignores the atmosphere, relativity, motion and calibration. Round-trip inputs and the stopwatch are illustrative. The mirror diagram is a 2-D slice. The schematic is not to scale. Recession and fluid-core findings are NASA-reported results from decades of multi-reflector data.
 
-## Use of SI tools
-Code, illustrations (diagrams and pixel characters), tests and text drafts were produced with an SI coding assistant (Claude, Anthropic) and reviewed by Team PARALLAX; every factual claim was checked against the NASA sources listed. SI-generated illustrations carry the on-screen watermark "Illustrations: SI-generated". Source files and page metadata include SI acknowledgements. The photographs are unaltered NASA archival images; no audio or video is SI-generated.
-
 ## License
 Original work: Apache License 2.0 (https://www.apache.org/licenses/LICENSE-2.0), which is the Space Apps default. NASA photographs are third-party public-domain material and are not relicensed. Dev dependencies: Vite (MIT), Playwright (Apache-2.0); neither is shipped in `dist/`.
